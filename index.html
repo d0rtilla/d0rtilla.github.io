@@ -153,34 +153,26 @@
                 <section class="github section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
+                         
+                          <script
+                          src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+                        </script>
                         
-                        <div id="github-graph" class="github-graph">
-                          <div class="section-inner shadow-sm rounded">
-                            <h2 class="heading">My GitHub</h2>
-                            <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
-                            
-                            <script
-                              src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-                            </script>
-                            
-                            <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-                            <link
-                              rel="stylesheet"
-                              href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-                            />
-                            
-                            <!-- Prepare a container for your calendar. -->
-                            <div class="calendar">
-                                <!-- Loading stuff -->
-                                Loading the data just for you.
-                            </div>
-                            
-                            <script>
-                               GitHubCalendar(".calendar", "d0rtilla");
-                            </script>
-    
-                          </div><!--//github-graph-->
+                        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+                        <link
+                          rel="stylesheet"
+                          href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+                        />
+                        
+                        <!-- Prepare a container for your calendar. -->
+                        <div class="calendar">
+                            <!-- Loading stuff -->
+                            Loading the data just for you.
+                        </div>
+                        
+                        <script>
+                           GitHubCalendar(".calendar", "d0rtilla")
+                        </script>
 
                         </div><!--//github-graph-->
 
@@ -198,8 +190,8 @@
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>San Francisco, US</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">jameslee@website.com</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Minnesota, US</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">jae.neuharth@gmail.com</a></li>
                                 <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.website.com</a></li>
                             </ul>
                         </div><!--//content-->  
@@ -301,22 +293,13 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
-                <aside class="blog aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Latest Blog Posts</h2>
-                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">Vanilla RSS plugin</a> to pull in your blog post feeds.</p>
-                        <div id="rss-feeds" class="content">
-
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
                 
                 <aside class="list music aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Favourite coding music</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/7GYan8RlOjpMcdALGgQVeL?si=f4e113ad41f24463">Songs I Enjoy</a></li>
                                 <li><i class="fas fa-headphones"></i> <a href="#">Ut sollicitudin in mauris non auctor</a></li>
                                 <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
                                 <li><i class="fas fa-headphones"></i> <a href="#">Duis et felis bibendum</a></li>
@@ -325,17 +308,7 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
-                <aside class="list conferences aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Conferences</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">WWDC 2030</a> (San Francisco)</li>
-                                <li><i class="far fa-calendar-alt"></i> <a href="#">Hive</a> (Seattle)</li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
+              
                 
                 <aside class="credits aside section">
                     <div class="section-inner shadow-sm rounded">
