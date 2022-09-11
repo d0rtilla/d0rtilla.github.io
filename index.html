@@ -154,6 +154,7 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">My GitHub</h2>
                          
+                        <div class="github graph">
                           <script
                           src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
                         </script>
@@ -177,9 +178,20 @@
                         </div><!--//github-graph-->
 
                         <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.        
-                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
-                        <div id="ghfeed" class="ghfeed">
+                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->  
+                        <link rel="stylesheet" href="node_modules/octicons/build/font/octicons.css">
+                        <link rel="stylesheet" href="node_modules/github-activity-feed/dist/github-activity.min.css">
+
+                        <script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
+                        <script type="text/javascript" src="node_modules/github-activity-feed/dist/github-activity.min.js"></script>                     
+                        <div id="feed" class="ghfeed">
+                          <script>GitHubActivity.feed({
+                            username: "d0rtilla",
+                            selector: "#feed",
+                          });</script>
+
                         </div><!--//ghfeed-->
+
                         
                     </div><!--//secton-inner-->
                 </section><!--//section-->
