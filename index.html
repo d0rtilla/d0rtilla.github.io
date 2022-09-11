@@ -1,44 +1,399 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>d0rtilla bio</title>
-  <style>
+    <title>Dortfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dortilla Portfolio">
+    <meta name="author" content="Jae Neuharth">    
+    <link rel="shortcut icon" href="../favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
 
-    h1{
-      color:black;
-      text-decoration: underline;
-      font-size: 60px;
-      text-align:center;
-    }
-
-    li{
-      font-size: 20px;
-    }
-
-  </style>
-
-</head>
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
 
 <body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">     
+	        <div class="row align-items-center">
+			    <div class="col">         
+		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png" alt="profile image" width="200" height="200" />
+		            <div class="profile-content">
+		                <h1 class="name">Jae Neuharth</h1>
+		                <h2 class="desc">Data Analytics</h2>   
+		                <ul class="social list-inline">
+		                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+		                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>    
+		                    <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>   
+		                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                
+		                </ul> 
+		            </div><!--//profile-->
+			    </div><!--//col-->
+	            <div class="col-12 col-md-auto">
+		            <div class="dark-mode-switch d-flex">
+						<div class="form-check form-switch mx-auto mx-md-0">
+							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+						</div>
+			        </div><!--//dark-mode-switch-->
+	                <a class="btn btn-cta-primary" href="https://themes.3rdwavemedia.com/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>        
+	            </div><!--//col-->
+	        </div><!--//row-->         
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>Hello, my name is Jae. I am currently taking a data analytics course at the U of M. I strive to be creative and productive in as many ways as I can, be that cooking, aquascaping, playing music, or making silly little programs, the pursuit of knowledge and the ability to practically apply said knowledge to my life has always driven me to do more. This site will be used to document my projects, both professional and personal.</p>
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://www.raspberrypi.com/app/uploads/2018/06/2018-06-07_12_33_44_Es9xIUvLsJ.jpg" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.jpeg" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="title mb-3"><a href="https://www.raspberrypi.com/app/uploads/2018/06/2018-06-07_12_33_44_Es9xIUvLsJ.jpg" target="_blank">soulTag</a></h3>
+                                    
+                                <div class="desc text-start">                                    
+                                    <p>A raspberrypi powered e-ink nametag. Video coming soon.</p>
+                                </div><!--//desc-->         
+                                <a class="btn btn-cta-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>                 
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://d0rtilla.github.io/web-design-challenge/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-1.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://d0rtilla.github.io/web-design-challenge/" target="_blank">Web Design Challenge</a></h3>
+                                    <p class="mb-2">For challenge #11 in my data analytics bootcamp, I was tasked with creating a data dashboard website for showcasing data that was generated in a previous challenge.</p>
+                                    <p><a class="more-link" href="https://d0rtilla.github.io/web-design-challenge/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/d0rtilla/Project-1-Shared-Repo" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-2.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/d0rtilla/Project-1-Shared-Repo" target="_blank">Data Analytics Project #1: Poverty's Effect on Mental Health</a></h3>
+                                    <p class="mb-2">In project 1 of my data analytics boot camp, we were tasked with creating a hypothesis and research proposal, and then finding our own datasets to be used in our hypothesis testing. My group chose to look at different economic factors and compare them with suicide rates to see if there is any correlation between various economic factors and people's mental health.</p>
+                                    <p><a class="more-link" href="https://github.com/d0rtilla/Project-1-Shared-Repo" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                        
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+                
 
-  <h1>dortilla bio</h1>
+                
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Dishwasher - <span class="place"><a href="#">Travail (Soul Brothers LLC)</a></span> <span class="year">(2019 - 2021)</span></h3>
+                                <p>Learned effective task prioritization and communication skills, also learned how to take down a stack of dishes like nobody's business.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Front of House - <span class="place"><a href="#">Pig Ate My Pizza (Soul Brothers LLC)</a></span> <span class="year">(2021 - 2021)</span></h3>
+                                <p>Learned useful customer service and sales skills; can pitch an $18 burger like a 19th century snake oil salesman.</p>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Cashier - <span class="place"><a href="#">The Produce Exchange</a></span> <span class="year">(2021 - Current)</span></h3>
+                                <p>Further honing my sales skills selling people on the greatest vegan cookies they've ever tasted while I am putting my focus into my coursework.</p>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="github section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">My GitHub</h2>
+                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
+                        
+                        <div id="github-graph" class="github-graph">
+                          <div class="section-inner shadow-sm rounded">
+                            <h2 class="heading">My GitHub</h2>
+                            <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
+                            
+                            <script
+                              src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+                            </script>
+                            
+                            <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+                            <link
+                              rel="stylesheet"
+                              href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+                            />
+                            
+                            <!-- Prepare a container for your calendar. -->
+                            <div class="calendar">
+                                <!-- Loading stuff -->
+                                Loading the data just for you.
+                            </div>
+                            
+                            <script>
+                               GitHubCalendar(".calendar", "d0rtilla");
+                            </script>
+    
+                          </div><!--//github-graph-->
 
-  <ul>
-    <li><strong>Email:</strong> <a href="#">jae.neuharth@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="github.com/d0rtilla">dortilla</a></li>
-    <li><strong>projects:</strong> <a href="https://d0rtilla.github.io/projects/">d0rtilla projects</a></li>
-  </ul>
+                        </div><!--//github-graph-->
 
-  <img src="https://picsum.photos/200/200" alt="gooble">
+                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.        
+                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
+                        <div id="ghfeed" class="ghfeed">
+                        </div><!--//ghfeed-->
+                        
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>San Francisco, US</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">jameslee@website.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.website.com</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Github profile so people can get more info there.</p>
+                            
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">Python &amp; Django<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
 
-  <p>We be programminq.</p>
-  <p>yar i be pirate</p>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%" aria-valuenow="96"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                               
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 94%" aria-valuenow="94"  aria-valuemin="0" aria-valuemax="94"></div>
+									</div><!--//level-bar-->                                   
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 93%" aria-valuenow="93"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Ruby on Rails<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+                                
+                                <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside class="testimonials aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p><i class="fas fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                                </blockquote>                
+                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
+                            </div><!--//item-->
+                            
+                            <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
+                            
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc Computer Science</h3>
+                                <h4 class="university">University College London <span class="year">(2017-2018)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Science</h3>
+                                <h4 class="university">University of Bristol <span class="year">(2013-2017)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Spanish:</strong></span>
+                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="blog aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Blog Posts</h2>
+                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">Vanilla RSS plugin</a> to pull in your blog post feeds.</p>
+                        <div id="rss-feeds" class="content">
 
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list music aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Favourite coding music</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="#">Ut sollicitudin in mauris non auctor</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="#">Duis et felis bibendum</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list conferences aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Conferences</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">WWDC 2030</a> (San Francisco)</li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="#">Hive</a> (Seattle)</li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="credits aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Credits</h2>
+                        <div class="content">
+                            <ul class="list-unstyled pb-2">
+                                <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
+                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
+                                <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Calendar Plugin</a></li>
+                                
+                                <li><a href="https://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Activity Stream</a></li>
+                                
+                                <li><a href="https://github.com/sdepold/vanilla-rss" target="_blank"><i class="fas fa-external-link-alt"></i>Vanilla RSS</a></li>
+                                <li><a href="https://github.com/coliff/dark-mode-switch"><i class="fas fa-external-link-alt"></i>Dark Mode Switch</a></li>
+                                
+                            </ul>
+                            
+                            <hr/>
+                            
+                             <p class="pt-2">This Boootstrap portfolio template is handcrafted by UX designer <a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying Riley</a> at <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> for developers and is <strong>FREE</strong> as long as you keep the footer attribution link.</p>
+                             <p>If you’d like to <strong>use this template without the attribution link</strong>, you can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/" target="_blank">buy the commercial license</a>.</p>
+                             
+                             <a class="btn btn-cta-primary btn-download" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/" target="_blank"><i class="fas fa-download"></i> I want to download</a>
+                            <hr/>
+                            <h5 class="subheading pt-3">Want more free Bootstrap themes and templates?</h5>
+                            <p>Check out our <a href="https://themes.3rdwavemedia.com/bootstrap-templates/free/">collection of free themes and templates.</a></p>
+                            <p>Follow <a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying</a> on twitter so you don't miss any future freebies!</p> 
+                            
+                            <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fab fa-twitter"></i> Follow on twitter</a>
+                            
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
  
-
-
-
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
+</html> 
 
-</html>
