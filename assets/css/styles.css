@@ -1,3 +1,17 @@
+@media (prefers-color-scheme: dark){
+  body {
+    background:rgb(32, 36, 36);
+  }
+}
+@media (prefers-color-scheme: light){
+  body {
+    background:rgb(245, 245, 255)
+  }
+}
+
+
+
+
 /*!   
  * Template Name: Developer - Portfolio Landing Page Bootstrap 5 Template for Developers
  * Version: Bootstrap 5 v2.0
